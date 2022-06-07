@@ -1,14 +1,14 @@
 words = []
 fileOB = open("findtext.txt","r")
 lines= fileOB.read().splitlines()
-for line in lines:
-    words.extend(line.split())
+for lines in lines:
+    words.extend(lines.splitlines())
     
 words1=[]
 fileOB1= open("replace.txt","r")
 lines1 =fileOB1.read().splitlines()
 for line in lines1:
-    words1.extend(line.split())
+    words1.extend(line.splitlines())
 
 with open("t8.shakespeare.txt","r") as file:
     filedata= file.read()
